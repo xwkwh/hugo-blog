@@ -1,0 +1,4 @@
+baseURL = "http://xwkwh.github.io/hugo"
+languageCode = "en-us"
+title = "Toby's Blog"
+theme = "ananke"
