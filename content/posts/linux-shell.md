@@ -1,9 +1,10 @@
 ---
-title: "Linux Shell Learning"
+title: Linux Shell Learning
 date: 2020-01-02 21:10:26
+---
 categories: Linux
 tags:
----
+	- Linux
 
 <a id="org2d80cd5"></a>
 
