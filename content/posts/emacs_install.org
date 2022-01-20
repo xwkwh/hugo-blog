@@ -1,0 +1,10 @@
+---
+title: "Emacs_install"
+date: 2022-01-20T14:50:00+08:00
+draft: true
+---
+
+* Mac
+emacs for mac
+* linux
+* Win
