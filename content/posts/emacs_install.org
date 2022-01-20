@@ -1,5 +1,5 @@
 ---
-title: "Emacs_install"
+title: "Emacs install Memo"
 date: 2022-01-20T14:50:00+08:00
 draft: true
 ---
@@ -7,4 +7,52 @@ draft: true
 * Mac
 emacs for mac
 * linux
+- install some dependency
+#+BEGIN_SRC shell
+  # Note: This installs dependencies for X11 as well.  Change this and the ./configure below if you don't want any X11 deps
+  sudo yum install \
+      GConf2-devel \
+      Xaw3d-devel \
+      dbus-devel \
+      dbus-glib-devel \
+      dbus-python \
+      gcc \
+      giflib-devel \
+      gnutls-devel \
+      gpm-devel \
+      gtk+-devel \
+      gtk2-devel \
+      ImageMagick \
+      ImageMagick-devel \
+      jansson-devel \
+      libX11-devel \
+      libXft-devel \
+      libXpm-devel \
+      libjpeg-devel \
+      libpng-devel \
+      libtiff-devel \
+      libungif-devel \
+      make \
+      ncurses-devel \
+      pkgconfig \
+      texi2html \
+      texinfo
+#+END_SRC
+** clone source code
+#+BEGIN_SRC shell
+  git clone https://git.savannah.gnu.org/git/emacs.git
+  cd emacs
+  // checkout version
+  git tag
+  git checkout emacs-27.1
+#+END_SRC
+
+** build & install
+#+BEGIN_SRC shell
+  ./autogen.sh
+  ./configure --without-selinux
+
+  make -j4 && sudo make install
+#+END_SRC
 * Win
+refer to [[https://www.gnu.org/software/emacs/download.html#nonfree][emacs]]
