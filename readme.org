@@ -1,0 +1,13 @@
+* quick start
+use hugo push some post
+** git  commit and push this project as usual
+** build static pages
+#+BEGIN_SRC shell
+  hugo -D
+#+END_SRC
+Output will be in ./public/ directory by default (-d/--destination flag to change it, or set publishdir in the config file).
+** push html project
+#+BEGIN_SRC shell
+  cd public/
+  git add . & git commit & git push
+#+END_SRC
